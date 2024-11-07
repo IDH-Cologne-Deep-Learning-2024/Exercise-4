@@ -11,7 +11,8 @@ import seaborn as sns
 
 
 def logistic_function(x, a=0, b=0):
-    pass
+    y_hat = 1 / (1 + (np.exp(-(a * x + b))))
+    return y_hat
 
 
 # binary cross-entropy loss
